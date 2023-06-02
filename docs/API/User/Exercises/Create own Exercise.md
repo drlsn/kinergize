@@ -10,6 +10,22 @@ Create your own exercise, e.g. if it's missing in a global listing.
 ### URL
 &nbsp;&nbsp;&nbsp;&nbsp; /api/me/exercises
 
+### Headers Required
+- Content-Type - application/json
+- Authorization - "Bearer Token"
+
+### Body
+- name - string, required, a name of the exercise to create
+- muscle - string, required, a name of a muscle the exercise is targeting; to choose from limited set of options (chest, back, legs, shoulders, biceps, triceps, abs)
+
+*Example*
+```
+{
+  "name": "Dumbbell Press",
+  "muscle": "chest"
+}
+```
+
 ## Response
 
 ### Codes
@@ -29,7 +45,7 @@ Create your own exercise, e.g. if it's missing in a global listing.
 ```
 {
   "error": {
-    "status": 400,
+    "status": 401,
     "message": "string"
   }
 }
