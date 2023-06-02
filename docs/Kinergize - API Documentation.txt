@@ -1,0 +1,13 @@
+
+## Workout Programs
+	
+POST 		api/users/{userId}/programs					Create a workout program		USER
+GET 		api/users/{userId}/programs					Get workout programs			USER
+GET 		api/users/{userId}/programs/{programId}		Get a workout program			USER
+PUT 		api/users/{userId}/programs/{programId}		Update a workout program		USER
+	
+## Exercises
+POST 		api/exercises								Create an exercise				ADMIN
+GET 		api/exercises								Get exercise					USER
+GET 		api/exercises/{exerciseId}					Get an exercise					USER
+PUT 		api/exercises								Update an exercise				ADMIN
