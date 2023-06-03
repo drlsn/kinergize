@@ -7,7 +7,7 @@ App for managing your workouts.
 
 - Days done/left till end of current plan, ex. 1/4 (3 left)
 
-- Weight:
+- Biometrics - Weight:
   - since last 7 days, ex. +0.4kg, was 72.2kg, now 72.6kg (average since then, 72.4kg?)
   - since last 14 days
   - since last 21 days
@@ -15,7 +15,7 @@ App for managing your workouts.
   - since last week, ex. now is april 14th Friday... so compare to last Sunday - April 9th
   - since last month, ex. now is april 14th... so compare to March 31th
 
-- Cm Measures of body parts:
+- Biometrics - cm measures of body parts:
   - since last 7 days, ex. biceps +1cm, chest +1cm, was 40cm, now 41cm,
   - since last 14 days
   - since last 21 days
@@ -28,34 +28,35 @@ App for managing your workouts.
   - since last year, ex. now is april 14th 2023... so compare to December 31th 2022
   - since last 2 years (or x years)
 
-- Sessions done count:
-  - since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
-  - since last 7 days, ex. 4 
-  - since last 14 days
-  - since last 21 days, ex. 18 (average 3 per plan, 2.3 per week)
-  - since last 28 days
-  - since last x days
-  - since last month
-  - since last 3 months
-  - since last 6 months
-  - since last 12 months
-  - since last year
-  - since last 2 years (or x years)
+- Sessions - counts:
+  - count since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
+  - count since last 7 days, ex. 4 + average per day
+  - count since last 14 days, ex. 4 + average per day, plan and per week
+  - count since last 21 days, ex. 18 (average 3 per plan, 2.3 per week.. per day), 
+  - count since last 28 days
+  - count since last x days
+  - count since last month
+  - count since last 3 months
+  - count since last 6 months
+  - count since last 12 months
+  - count since last year
+  - count since last 2 years (or x years)
+  - and so on..
   
-- Exercises done:
+ - Sessions - durations:
+   - duration since current plan started, ex. 1h 33m 23s (+ 3m 4s since last session), + average per day, per session
+   - duration since last 2 sessions (current + last), ex. 4h 36m + average per day, per session, per plan
+   - duration since last x sessions + average
+   - duration since last 7 days + average
+   - duration since last 14 days, + average 
+   - and so on..
+  
+- Exercises:
   - since current plan started, ex. 56/87 (31 left),
   - since last 7 days, ex. 241, (average since 1before - 48 per session actually done, 31 per day in general)
   - since last x days, ex. 241,
   - since last 10 weeks, ex. 2024 (average since then - 38 per session, 31 per day in general, 102 per week in general)
-  
- - Sessions durations and changes:
-   - average since current plan started, ex. 33m 23s (+ 3m 4s since last session)
-   - average since last 2 sessions - current + last, etc.
-   - average since last x sessions
-   - average since last 7 days
-   - average since last 14 days, etc.
-   - ...
-
+ 
  - Exercises durations and changes:
    - chest exercises:
      - dumbbell press:
@@ -79,7 +80,6 @@ App for managing your workouts.
   - Per Exercise
    - chest exercises:
      - dumbbell press (able to switch between "by time" or "by info type"):
-       
        - reps done since current plan started per muscle group, ex. 23 done / 26 planned
        - reps done since 2 or x plans ex. 45 done / 53 planned / 8 skept
        - reps done since x days, weeks, so on
@@ -88,23 +88,6 @@ App for managing your workouts.
        - etc. 7 days, weeks, months and so on ...
      - exercise x.. and so on...
    - back exercises.. and so on..
-     - ...
-       - ...
-   - ...
-
-- Sleep hours:
-  - ??
-
-- Has the plans has been done as expected, have some days been skept, or plans done over the whole day or missing exercises, maybe done two session in same day??
-- How warm-ups has been done before workouts - how many minutes..
-- How many exercises I've done last week, weeks or months or year(s)
-- How many exercises I've done last week, weeks or months or year(s) PER MUSCLE GROUP
-- How many days I skept while doing a plan - diagram, corellation with sleep, general feeling while doing exercises
-- How much time I spent on exercises given day, last week, weeks or months or year(s)
-- How exercise time changed over last times, ex. last 
-- How many exercises do I have left till the end of current day, plan, week, month, etc.
-- How well I felt doing my exercises.. last week... - diagram corellation with sleep, or series amount, or intensity...
-- How my biometrics changed over time last week, weeks or months or year(s) (weight, cms) - diagram corellation with wellness, or series amount, or intensity
 
 ## API - User
 
