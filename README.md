@@ -4,6 +4,12 @@ App for managing your workouts
 
 ## API - User
 
+### Biometrics
+| HTTP Method | Endpoint | Description | Details |
+| --- | --- | --- | --- |
+| `GET` | `api/me/biometrics` | Get own biometrics details | [link]() |
+| `PUT` | `api/me/biometrics` | Update own biometrics details | [link]() |
+
 ### Workout Programs
 | HTTP Method | Endpoint | Description | Details |
 | --- | --- | --- | --- |
@@ -32,7 +38,7 @@ App for managing your workouts
 | HTTP Method | Endpoint | Short Description | Details |
 | --- | --- | --- | --- |
 | `POST` | `api/me/sessions/{sessionId}` | Start a workout session | [link]() |
-| `PATCH` | `api/me/sessions/{sessionId}` | Modify or end the workout session | [link]() |
+| `PATCH` | `api/me/sessions/{sessionId}` | Update or end the workout session | [link]() |
 
 ### Workout Session Exercises
 | HTTP Method | Endpoint | Short Description | Details |
@@ -40,7 +46,7 @@ App for managing your workouts
 | `POST` | `api/me/sessions/{sessionId}/exercises` | Start an exercise of the workout session | [link]() |
 | `PUT` | `api/me/sessions/{sessionId}/exercises/{exerciseId}` | Modify the exercise details | [link]() |
 
-### Workout Sessions Statistics
+### Statistics
 | HTTP Method | Endpoint | Short Description | Details |
 | --- | --- | --- | --- |
 | `GET` | `api/me/statistics` | Start an exercise of the workout session | [link]() |
