@@ -1,6 +1,21 @@
 # Kinergize
 
-App for managing your workouts
+App for managing your workouts.
+
+## Goals
+&nbsp;&nbsp;&nbsp;&nbsp; *The goal is to track various aspects of the workouts, so to have control and make potential improvements, e.g.:*
+
+- How many sessions has been done since last week, n last weeks, months or year(s)
+- Has the plans has been done as expected, have some days been skept, or plans done over the whole day or missing exercises
+- How warm-ups has been done before workouts - how many minutes..
+- How many exercises I've done last week, weeks or months or year(s)
+- How many exercises I've done last week, weeks or months or year(s) PER MUSCLE GROUP
+- How many days I skept while doing a plan - diagram, corellation with sleep, general feeling while doing exercises
+- How much time I spent on exercises given day, last week, weeks or months or year(s)
+- How exercise time changed over last times, ex. last 
+- How many exercises do I have left till the end of current day, plan, week, month, etc.
+- How well I felt doing my exercises.. last week... - diagram corellation with sleep, or series amount, or intensity...
+- How my biometrics changed over time last week, weeks or months or year(s) (weight, cms) - diagram corellation with wellness, or series amount, or intensity
 
 ## API - User
 
@@ -49,6 +64,6 @@ App for managing your workouts
 ### Statistics
 | HTTP Method | Endpoint | Short Description | Details |
 | --- | --- | --- | --- |
-| `GET` | `api/me/statistics` | Get statistics about last workouts. | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
+| `GET` | `api/me/statistics` | Get statistics about workouts | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
 
 ## API - Admin
