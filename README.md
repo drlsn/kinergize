@@ -51,9 +51,9 @@ App for managing your workouts.
    - duration since last 14 days, + average 
    - and so on..
   
-- Exercises:
+- Exercises - All:
   - since current plan started, ex. 56/87 (31 left),
-  - since last 7 days, ex. 241, (average since 1before - 48 per session actually done, 31 per day in general)
+  - since last 7 days, ex. 241, + average since 1before - 48 per session actually done, 31 per day in general)
   - since last x days, ex. 241,
   - since last 10 weeks, ex. 2024 (average since then - 38 per session, 31 per day in general, 102 per week in general)
  
