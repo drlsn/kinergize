@@ -5,8 +5,48 @@ App for managing your workouts.
 ## Goals
 &nbsp;&nbsp;&nbsp;&nbsp; *The goal is to track various aspects of the workouts, so to have control and make potential improvements, e.g.:*
 
-- How many sessions has been done since last week, n last weeks, months or year(s)
-- Has the plans has been done as expected, have some days been skept, or plans done over the whole day or missing exercises
+- Exercises done/left till end of current plan, ex. 56/87 (31 left)
+- Days done/left till end of current plan, ex. 1/4 (3 left)
+
+- Weight change:
+  - since last 7 days, ex. +0.4kg, was 72.2kg, now 72.6kg
+  - since last 14 days
+  - since last 21 days
+  - since last 28 days
+  - since last week, ex. now is april 14th Friday... so compare to last Sunday - April 9th
+  - since last month, ex. now is april 14th... so compare to March 31th
+
+- Cm Measures of body parts:
+  - since last 7 days, ex. biceps +1cm, chest +1cm, was 40cm, now 41cm,
+  - since last 14 days
+  - since last 21 days
+  - since last 28 days
+  - since last x days (to be selectable from dropdown or put to text field)
+  - since last month
+  - since last 3 months (or n months, to be selectable from dropdown or put to text field)
+  - since last 6 months
+  - since last 12 months, ex. now is april 14th 2023... so compare to April 14th 2022
+  - since last year, ex. now is april 14th 2023... so compare to December 31th 2022
+  - since last 2 years (or x years)
+
+- Sessions done count:
+  - since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
+  - since last 7 days, ex. 4
+  - since last 14 days
+  - since last 21 days
+  - since last 28 days
+  - since last x days
+  - since last month
+  - since last 3 months
+  - since last 6 months
+  - since last 12 months
+  - since last year
+  - since last 2 years (or x years)
+  
+- Sleep hours:
+  - ??
+
+- Has the plans has been done as expected, have some days been skept, or plans done over the whole day or missing exercises, maybe done two session in same day??
 - How warm-ups has been done before workouts - how many minutes..
 - How many exercises I've done last week, weeks or months or year(s)
 - How many exercises I've done last week, weeks or months or year(s) PER MUSCLE GROUP
@@ -25,7 +65,7 @@ App for managing your workouts.
 | `GET` | `api/me/biometrics` | Get own biometrics details | [link]() |
 | `PUT` | `api/me/biometrics` | Update own biometrics details | [link]() |
 
-### Workout Programs
+### Workout Plans
 | HTTP Method | Endpoint | Description | Details |
 | --- | --- | --- | --- |
 | `POST` | `api/me/programs` | Create own workout program | [link]() |
@@ -33,6 +73,7 @@ App for managing your workouts.
 | `GET` | `api/me/programs/{programId}` | Get own workout program details | [link]() |
 | `PUT` | `api/me/programs/{programId}` | Update own workout program details | [link]() |
 | `DELETE` | `api/me/programs/{programId}` | Delete own workout program | [link]() |
+.. also cancel current doing plan - meaning start over
 
 ### Exercises
 | HTTP Method | Endpoint | Short Description | Details |
