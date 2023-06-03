@@ -5,11 +5,10 @@ App for managing your workouts.
 ## Goals
 &nbsp;&nbsp;&nbsp;&nbsp; *The goal is to track various aspects of the workouts, so to have control and make potential improvements, e.g.:*
 
-- 
 - Days done/left till end of current plan, ex. 1/4 (3 left)
 
-- Weight change:
-  - since last 7 days, ex. +0.4kg, was 72.2kg, now 72.6kg
+- Weight:
+  - since last 7 days, ex. +0.4kg, was 72.2kg, now 72.6kg (average since then, 72.4kg?)
   - since last 14 days
   - since last 21 days
   - since last 28 days
@@ -43,7 +42,7 @@ App for managing your workouts.
   - since last year
   - since last 2 years (or x years)
   
- - Exercises done:
+- Exercises done:
   - since current plan started, ex. 56/87 (31 left),
   - since last 7 days, ex. 241, (average since 1before - 48 per session actually done, 31 per day in general)
   - since last x days, ex. 241,
@@ -60,6 +59,30 @@ App for managing your workouts.
  - Exercises durations and changes:
    - chest exercises:
      - dumbbell press:
+       - now vs the 1 before, ex. 38s now / 42s 1before (average since 1before - 40s)
+       - now vs the 2 before (or x before), ex. 38s now / 44s 2before (average since 2before - 42s)
+       - etc. 7 days, weeks, months and so on ...
+     - exercise x.. and so on...
+   - back exercises.. and so on..
+     - ...
+       - ...
+   - ...
+
+- Exercises:
+  - All
+  - Per Muscle Group
+    - chest:
+      - reps done since current plan started per muscle group, ex. 23 done / 26 planned
+      - reps done since 2 or x plans ex. 45 done / 53 planned / 8 skept
+      - reps done since x days, weeks, so on
+
+  - Per Exercise
+   - chest exercises:
+     - dumbbell press (able to switch between "by time" or "by info type"):
+       
+       - reps done since current plan started per muscle group, ex. 23 done / 26 planned
+       - reps done since 2 or x plans ex. 45 done / 53 planned / 8 skept
+       - reps done since x days, weeks, so on
        - now vs the 1 before, ex. 38s now / 42s 1before (average since 1before - 40s)
        - now vs the 2 before (or x before), ex. 38s now / 44s 2before (average since 2before - 42s)
        - etc. 7 days, weeks, months and so on ...
@@ -134,3 +157,16 @@ App for managing your workouts.
 | `GET` | `api/me/statistics` | Get statistics about workouts | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
 
 ## API - Admin
+
+
+## Glossary
+
+#### Repetition
+
+#### Workout
+
+#### Plan
+
+#### Exercise
+
+#### Muscle Group
