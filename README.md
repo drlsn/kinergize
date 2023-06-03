@@ -97,6 +97,11 @@ App for managing your workouts.
 | `GET` | `api/me/biometrics` | Get own biometrics details | [link]() |
 | `PUT` | `api/me/biometrics` | Update own biometrics details | [link]() |
 
+### Biometrics - Weight
+| `POST` | `api/me/biometrics/weights` | Add weight biometric | [link]() |
+| `POST` | `api/me/biometrics/measures` | Add measure biometric | [link]() |
+| `GET` | `api/me/biometrics/measures` | Add measure biometric | [link]() |
+
 ### Workout Plans
 | HTTP Method | Endpoint | Description | Details |
 | --- | --- | --- | --- |
