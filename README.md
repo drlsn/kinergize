@@ -49,6 +49,6 @@ App for managing your workouts
 ### Statistics
 | HTTP Method | Endpoint | Short Description | Details |
 | --- | --- | --- | --- |
-| `GET` | `api/me/statistics` | Start an exercise of the workout session | [link]() |
+| `GET` | `api/me/statistics` | Get statistics about last workouts. | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
 
 ## API - Admin
