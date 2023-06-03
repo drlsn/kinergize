@@ -5,7 +5,7 @@ App for managing your workouts.
 ## Goals
 &nbsp;&nbsp;&nbsp;&nbsp; *The goal is to track various aspects of the workouts, so to have control and make potential improvements, e.g.:*
 
-- Exercises done/left till end of current plan, ex. 56/87 (31 left)
+- 
 - Days done/left till end of current plan, ex. 1/4 (3 left)
 
 - Weight change:
@@ -31,9 +31,9 @@ App for managing your workouts.
 
 - Sessions done count:
   - since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
-  - since last 7 days, ex. 4
+  - since last 7 days, ex. 4 
   - since last 14 days
-  - since last 21 days
+  - since last 21 days, ex. 18 (average 3 per plan, 2.3 per week)
   - since last 28 days
   - since last x days
   - since last month
@@ -43,6 +43,32 @@ App for managing your workouts.
   - since last year
   - since last 2 years (or x years)
   
+ - Exercises done:
+  - since current plan started, ex. 56/87 (31 left),
+  - since last 7 days, ex. 241, (average since 1before - 48 per session actually done, 31 per day in general)
+  - since last x days, ex. 241,
+  - since last 10 weeks, ex. 2024 (average since then - 38 per session, 31 per day in general, 102 per week in general)
+  
+ - Sessions durations and changes:
+   - average since current plan started, ex. 33m 23s (+ 3m 4s since last session)
+   - average since last 2 sessions - current + last, etc.
+   - average since last x sessions
+   - average since last 7 days
+   - average since last 14 days, etc.
+   - ...
+
+ - Exercises durations and changes:
+   - chest exercises:
+     - dumbbell press:
+       - now vs the 1 before, ex. 38s now / 42s 1before (average since 1before - 40s)
+       - now vs the 2 before (or x before), ex. 38s now / 44s 2before (average since 2before - 42s)
+       - etc. 7 days, weeks, months and so on ...
+     - exercise x.. and so on...
+   - back exercises.. and so on..
+     - ...
+       - ...
+   - ...
+
 - Sleep hours:
   - ??
 
