@@ -14,38 +14,33 @@ Every endpoint requires at least a certain role to be able to execute it success
 - User
 - Guest - does not requires an authorization token
 
-### Workout Plans - General
+### Workout Plans
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/plans` | Get all workout plans - public and private | Admin | [link]() |
+| `GET` | `api/plans` | Get all workout plans | Admin | [link]() |
+| `GET` | `api/plans/me` | Get all workout plans - own | User | [link]() |
+| `POST` | `api/plans/me` | Add a workout plan - own, private | User | [link]() |
+| `GET` | `api/plans/public` | Get all workout plans - public | Guest | [link]() |
+| `GET` | `api/plans/private` | Get all workout plans - private | Admin | [link]() |
 | `GET` | `api/plans/{planId}` | Get the workout plan details | User | [link]() |
 | `PUT` | `api/plans/{planId}` | Update the workout plan details | User | [link]() |
 | `DELETE` | `api/plans/{planId}` | Delete the workout plan | User | [link]() |
 | `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link]() |
-| `GET` | `api/plans/public` | Get all workout plans - public only | Guest | [link]() |
-| `GET` | `api/plans/private` | Get all workout plans - private only | Admin | [link]() |
 
-### Workout Plans - Own
+### Workout Plan Aims
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `POST` | `api/me/plans` | Add own workout plan | User | [link]() |
-| `GET` | `api/me/plans` | Get own private workout plan list | User | [link]() |
-
-### Workout Plan Aims - General
-| HTTP Method | Endpoint | Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `GET` | `api/plans/{planId}/aims` | Get all workout plan aims - public and private | Admin | [link]() |
-| `GET` | `api/plans/{planId}/aims/{aimId}` | Get workout plan aim details | User | [link]() |
-| `PUT` | `api/plans/{planId}/aims/{aimId}` | Update workout plan aim details | User | [link]() |
-| `DELETE` | `api/plans/{planId}/aims/{aimId}` | Finish the workout plan aim | User | [link]() |
-| `POST` | `api/plans/{planId}/aims` | Start a workout plan aim | Admin | [link]() |
+| `GET` | `api/plans/aims` | Get all workout plan aims | Admin | [link]() |
+| `GET` | `api/plans/aims/public` | Get all workout plan aims - public | Admin | [link]() |
+| `GET` | `api/plans/aims/private` | Get all workout plan aims - private | Admin | [link]() |
+| `GET` | `api/plans/aims/me` | Get all workout plan aims - own | User | [link]() |
+| `GET` | `api/plans/{planId}/aims` | Get all workout plan aims - of specific plan | User | [link]() |
 | `GET` | `api/plans/{planId}/aims/public` | Get all workout plan aims - public only | Admin | [link]() |
 | `GET` | `api/plans/{planId}/aims/private` | Get all workout plan aims - private only | Admin | [link]() |
-
-### Workout Plan Aims - Own
-| HTTP Method | Endpoint | Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `GET` | `api/me/plans/aims` | Get own private workout plan aim list | User | [link]() |
+| `POST` | `api/plans/{planId}/aims` | Start a workout plan aim | Admin | [link]() |
+| `GET` | `api/plans/aims/{aimId}` | Get workout plan aim details | User | [link]() |
+| `PUT` | `api/plans/aims/{aimId}` | Update workout plan aim details | User | [link]() |
+| `DELETE` | `api/plans/aims/{aimId}` | Finish the workout plan aim | User | [link]() |
 
 ### Sessions - General
 | HTTP Method | Endpoint | Short Description | Role | Details |
