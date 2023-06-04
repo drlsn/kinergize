@@ -61,7 +61,7 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Sessions - Own
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `POST` | `api/me/sessions` | Add own private session | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
+| `POST` | `api/me/sessions` | Add own private session | User | [link]() |
 | `GET` | `api/me/sessions` | Get own session list | User | [link]() |
 
 ### Sessions - By Workout Plan
@@ -80,13 +80,13 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Session Aims - General
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/sessions` | Get all session aims - public and private | Admin | [link]() |
-| `GET` | `api/sessions/{sessionId}` | Get the session aim details | User | [link]() |
-| `PUT` | `api/sessions/{sessionId}` | Update the session aim details | User | [link]() |
-| `DELETE` | `api/sessions/{sessionId}` | Delete the session aim | User | [link]() |
-| `POST` | `api/sessions/public` | Add a session as public | Admin | [link]() |
-| `GET` | `api/sessions/public` | Get all sessions - public only | Guest | [link]() |
-| `GET` | `api/sessions/private` | Get all sessions - private only | Admin | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims` | Get all session aims - public and private | Admin | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public only | Guest | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims/private` | Get all session aims - private only | Admin | [link]() |
+| `POST` | `api/sessions/{sessionId}/aims` | Start a session aim | Admin | [link]() |
+| `GET` | `api/aims/{aimId}` | Get the session aim details | User | [link]() |
+| `PUT` | `api/aims/{aimId}` | Update the session aim details | User | [link]() |
+| `DELETE` | `api/aims/{aimId}` | Finish the session aim | User | [link]() |
 
 ### Exercises - General
 | HTTP Method | Endpoint | Short Description | Role | Details |
