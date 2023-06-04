@@ -12,7 +12,7 @@ The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documen
 Every endpoint requires at least a certain role to be able to execute it successfully. Depending on a role the same endpoint my return different amounts of data. The roles, from the most to the least privileged, are:
 - Admin
 - User
-- Guest
+- Guest - requests of any guest does not requires an authorization token to be sent
 
 TO DO: Remember to add 403 codes for requests if forbidden!
 
@@ -59,8 +59,38 @@ TO DO: Remember to add 403 codes for requests if forbidden!
 ### Exercises - By Workout Plan 
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/plans/{planId}/exercises` | Get workout plan exercise list | [link]() |
-| `DELETE` | `api/plans/{planId}/exercises/{exerciseId}` | Remove the exercise from the workout plan | [link]() |
+| `GET` | `api/plans/{planId}/exercises` | Get workout plan exercises list | Guest | [link]() |
+
+### Sessions - General
+| HTTP Method | Endpoint | Short Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/sessions` | Get all sessions - public and private | Admin | [link]() |
+| `GET` | `api/sessions/{sessionId}` | Get the session details | User | [link]() |
+| `PUT` | `api/sessions/{sessionId}` | Update the sessions details | User | [link]() |
+| `DELETE` | `api/sessions/{sessionId}` | Delete the session | User | [link]() |
+| `POST` | `api/sessions/public` | Add a session as public | Admin | [link]() |
+| `GET` | `api/sessions/public` | Get all sessions - public only | Guest | [link]() |
+| `GET` | `api/sessions/private` | Get all sessions - private only | Admin | [link]() |
+
+### Sessions - Own
+| HTTP Method | Endpoint | Short Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `POST` | `api/me/sessions` | Add own private session | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
+| `GET` | `api/me/sessions` | Get own session list | User | [link]() |
+
+### Sessions - By Workout Plan
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/plans/{planId}/sessions` | Get sessions list of the workout plan | Guest | [link]() |
+| `POST` | `api/plans/{planId}/sessions` | Add a session to the workout plan | User | [link]() |
+| `DELETE` | `api/plans/{planId}/sessions/{sessionId}` | Remove a session from the workout plan | User | [link]() |
+
+### Sessions - By Workout Plan
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/plans/{planId}/sessions` | Get sessions list of the workout plan | Guest | [link]() |
+| `POST` | `api/plans/{planId}/sessions` | Add a session to the workout plan | User | [link]() |
+| `DELETE` | `api/plans/{planId}/sessions/{sessionId}` | Remove a session from the workout plan | User | [link]() |
 
 ### Workout Program Exercises
 | HTTP Method | Endpoint | Short Description | Details |
@@ -89,8 +119,16 @@ TO DO: Remember to add 403 codes for requests if forbidden!
 
 ## Concepts Description
 
-- Workout plan consists of multiple sessions.
-- Each session consists of multiple exercises.
+- Each workout plan consists of multiple sessions.
+- Each session consists of multiple sets.
+- Each sets consists of multiple exercises.
+- Each exercise consists of multiple reps.
+- Each rep consists of multiple movements (most often two).
+
+*In reality the movements of a rep could be more complex, but this is a general idea.*
+
+Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
+
 - Each exercise can be done several times per session.
 - Each exercise consists of several reps.
 - A rep usually consists of two types of motions:
