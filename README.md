@@ -12,9 +12,9 @@
 | --- | --- | --- | --- |
 | `POST` | `api/me/plans` | Create own workout plan | [link]() |
 | `GET` | `api/me/plans` | Get own workout plan list | [link]() |
-| `GET` | `api/me/plans/{programId}` | Get own workout plan details | [link]() |
-| `PUT` | `api/me/plans/{programId}` | Update own workout plan details | [link]() |
-| `DELETE` | `api/me/plans/{programId}` | Delete own workout plan | [link]() |
+| `GET` | `api/me/plans/{planId}` | Get own workout plan details | [link]() |
+| `PUT` | `api/me/plans/{planId}` | Update own workout plan details | [link]() |
+| `DELETE` | `api/me/plans/{planId}` | Delete own workout plan | [link]() |
 .. also cancel current doing plan - meaning start over
 
 ### Exercises
