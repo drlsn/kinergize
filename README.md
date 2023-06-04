@@ -5,7 +5,7 @@
 #### Tech
 &nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, JavaScript, React.js, C#/.NET, AWS, Docker, WebApi
 
-## API - User
+## API
 
 The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documentation/web-api). 
 
@@ -39,28 +39,6 @@ TO DO: Remember to add 403 codes for requests if forbidden!
 | `POST` | `api/me/plans/{planId}/start` | Start the workout plan | User | [link]() |
 | `POST` | `api/me/plans/{planId}/finish` | Finish current workout plan | User | [link]() |
 
-### Exercises - General
-| HTTP Method | Endpoint | Short Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `GET` | `api/exercises` | Get all exercises - public and private | Admin | [link]() |
-| `GET` | `api/exercises/{exerciseId}` | Get the exercise details | User | [link]() |
-| `PUT` | `api/exercises/{exerciseId}` | Update the exercise details | User | [link]() |
-| `DELETE` | `api/exercises/{exerciseId}` | Delete the exercise | User | [link]() |
-| `POST` | `api/exercises/public` | Add an exercise as public | Admin | [link]() |
-| `GET` | `api/exercises/public` | Get all exercises - public only | Guest | [link]() |
-| `GET` | `api/exercises/private` | Get all exercises - private only | Admin | [link]() |
-
-### Exercises - Own
-| HTTP Method | Endpoint | Short Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `POST` | `api/me/exercises` | Add own private exercise | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
-| `GET` | `api/me/exercises` | Get own exercises list | User | [link]() |
-
-### Exercises - By Workout Plan 
-| HTTP Method | Endpoint | Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `GET` | `api/plans/{planId}/exercises` | Get workout plan exercises list | Guest | [link]() |
-
 ### Sessions - General
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
@@ -85,37 +63,52 @@ TO DO: Remember to add 403 codes for requests if forbidden!
 | `POST` | `api/plans/{planId}/sessions` | Add a session to the workout plan | User | [link]() |
 | `DELETE` | `api/plans/{planId}/sessions/{sessionId}` | Remove a session from the workout plan | User | [link]() |
 
-### Sessions - By Workout Plan
+### Sessions - Operations
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/plans/{planId}/sessions` | Get sessions list of the workout plan | Guest | [link]() |
-| `POST` | `api/plans/{planId}/sessions` | Add a session to the workout plan | User | [link]() |
-| `DELETE` | `api/plans/{planId}/sessions/{sessionId}` | Remove a session from the workout plan | User | [link]() |
+| `POST` | `api/sessions/{sessionId}/start` | Start a workout session | User | [link]() |
+| `POST` | `api/sessions/{sessionId}/finish` | Finish a workout session | User | [link]() |
 
-### Workout Program Exercises
-| HTTP Method | Endpoint | Short Description | Details |
-| --- | --- | --- | --- |
-| `GET` | `api/me/programs/{programId}/exercises` | Get all exercises of the workout program | [link]() |
-| `GET` | `api/me/programs/{programId}/days/{dayIndex}/exercises` | Get all exercises of the workout program's single day | [link]() |
+### Exercises - General
+| HTTP Method | Endpoint | Short Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/exercises` | Get all exercises - public and private | Admin | [link]() |
+| `GET` | `api/exercises/{exerciseId}` | Get the exercise details | User | [link]() |
+| `PUT` | `api/exercises/{exerciseId}` | Update the exercise details | User | [link]() |
+| `DELETE` | `api/exercises/{exerciseId}` | Delete the exercise | User | [link]() |
+| `POST` | `api/exercises/public` | Add an exercise as public | Admin | [link]() |
+| `GET` | `api/exercises/public` | Get all exercises - public only | Guest | [link]() |
+| `GET` | `api/exercises/private` | Get all exercises - private only | Admin | [link]() |
 
-### Workout Sessions
-| HTTP Method | Endpoint | Short Description | Details |
-| --- | --- | --- | --- |
-| `POST` | `api/me/sessions/{sessionId}` | Start a workout session | [link]() |
-| `PATCH` | `api/me/sessions/{sessionId}` | Update or end the workout session | [link]() |
+### Exercises - Own
+| HTTP Method | Endpoint | Short Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `POST` | `api/me/exercises` | Add own private exercise | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
+| `GET` | `api/me/exercises` | Get own exercises list | User | [link]() |
 
-### Workout Session Exercises
-| HTTP Method | Endpoint | Short Description | Details |
-| --- | --- | --- | --- |
-| `POST` | `api/me/sessions/{sessionId}/exercises` | Start an exercise of the workout session | [link]() |
-| `PUT` | `api/me/sessions/{sessionId}/exercises/{exerciseId}` | Modify the exercise details | [link]() |
+### Exercises - By Workout Plan 
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/plans/{planId}/exercises` | Get workout plan exercises list | Guest | [link]() |
+
+### Exercises - Operations
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `POST` | `api/sessions/{sessionId}/exercises/{exerciseId}/start` | Start the exercise | User | [link]() |
+| `POST` | `api/sessions/{sessionId}/exercises/{exerciseId}/finish` | Finish the exercise | User | [link]() |
+| `PUT` | `api/sessions/{sessionId}/exercises/{exerciseId}` | Update the exercise details | User | [link]() |
 
 ### Statistics
-| HTTP Method | Endpoint | Short Description | Details |
-| --- | --- | --- | --- |
-| `GET` | `api/me/statistics` | Get statistics about workouts | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
-
-## API - Admin
+TO DO: Move queries out to specific endpoint details page 
+| HTTP Method | Endpoint | Short Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/me/statistics` | Get statistics about workouts | User | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
+| `GET` | `api/me/statistics/plans` | Get statistics about done workout plans | User | [link]() |
+| `GET` | `api/me/statistics/sessions` | Get statistics about done sessions | User | [link]() |
+| `GET` | `api/me/statistics/exercises` | Get statistics about done exercises | User | [link]() |
+| `GET` | `api/me/statistics/exercises?bodyPart={bodyPartName}` | Get statistics about done exercises per body part | User | [link]() |
+| `GET` | `api/me/statistics/exercises?id={exerciseId}` | Get statistics about done exercises per type (id) | User | [link]() |
+| `GET` | `api/me/statistics/exercises?id={exerciseId}&created:lte:2021-01-20T00:00:00` | Get statistics about done exercises per type (id) since a date time | User | [link]() |
 
 ## Concepts Description
 
