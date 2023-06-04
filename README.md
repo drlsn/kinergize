@@ -14,8 +14,6 @@ Every endpoint requires at least a certain role to be able to execute it success
 - User
 - Guest - does not requires an authorization token
 
-TO DO: Remember to add 403 codes for requests if forbidden!
-
 ### Workout Plans - General
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
@@ -99,7 +97,6 @@ TO DO: Remember to add 403 codes for requests if forbidden!
 | `PUT` | `api/sessions/{sessionId}/exercises/{exerciseId}` | Update the exercise details | User | [link]() |
 
 ### Statistics
-TO DO: Move queries out to specific endpoint details page 
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
 | `GET` | `api/me/statistics` | Get statistics about workouts | User | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
