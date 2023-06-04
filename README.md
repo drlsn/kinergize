@@ -12,7 +12,7 @@ The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documen
 Every endpoint requires at least a certain role to be able to execute it successfully. Depending on a role the same endpoint my return different amounts of data. The roles, from the most to the least privileged, are:
 - Admin
 - User
-- Guest - requests of any guest does not requires an authorization token to be sent
+- Guest - does not requires an authorization token
 
 TO DO: Remember to add 403 codes for requests if forbidden!
 
