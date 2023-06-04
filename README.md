@@ -7,17 +7,34 @@
 
 ## API - User
 
-### Workout Plans
+The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documentation/web-api). 
+
+Every endpoint requires at least a certain role to be able to execute it successfully. The roles, from the most to the least privileged, are:
+- Admin
+- User
+- Guest
+
+### Workout Plans - General
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/plans` | Get all workout plans - public and private | Admin | [link]() |
+| `GET` | `api/plans/{planId}` | Get own workout plan details | Admin | [link]() |
+| `PUT` | `api/plans/{planId}` | Update the workout plan details | User | [link]() |
+| `DELETE` | `api/plans/{planId}` | Delete the workout plan | User | [link]() |
+| `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link]() |
+| `GET` | `api/plans/public` | Get all workout plans - public only | Guest | [link]() |
+| `GET` | `api/plans/private` | Get all workout plans - private only | Admin | [link]() |
+
+### Workout Plans - Own
 | HTTP Method | Endpoint | Description | Details |
 | --- | --- | --- | --- |
 | `POST` | `api/me/plans` | Create own workout plan | [link]() |
-| `GET` | `api/me/plans` | Get own workout plan list | [link]() |
-| `GET` | `api/me/plans/{planId}` | Get own workout plan details | [link]() |
-| `PUT` | `api/me/plans/{planId}` | Update own workout plan details | [link]() |
-| `DELETE` | `api/me/plans/{planId}` | Delete own workout plan | [link]() |
+| `GET` | `api/me/plans` | Get own private workout plan list | [link]() |
+
+| `POST` | `api/me/plans/{planId}/cancel` | Cancel current workout plan | [link]() |
 .. also cancel current doing plan - meaning start over
 
-### Exercises
+### Exercises - By Own
 | HTTP Method | Endpoint | Short Description | Details |
 | --- | --- | --- | --- |
 | `POST` | `api/me/exercises` | Create own exercise | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
@@ -25,6 +42,13 @@
 | `GET` | `api/me/exercises/{exerciseId}` | Get own exercise details | [link]() |
 | `PUT` | `api/me/exercises/{exerciseId}` | Update own exercise details | [link]() |
 | `DELETE` | `api/me/exercises/{exerciseId}` | Delete own exercise | [link]() |
+
+### Exercises - By Workout Plan 
+| HTTP Method | Endpoint | Description | Details |
+| --- | --- | --- | --- |
+| `POST` | `api/plans/{planId}/exercises` | Add an exercise to workout plan | [link]() add 403 forbidden! |
+| `GET` | `api/plans/{planId}/exercises` | Get workout plan exercise list | [link]() |
+| `DELETE` | `api/plans/{planId}/exercises/{exerciseId}` | Remove the exercise from the workout plan | [link]() |
 
 ### Workout Program Exercises
 | HTTP Method | Endpoint | Short Description | Details |
