@@ -1,58 +1,9 @@
 # Kinergize
 
-App for managing your workouts.
+&nbsp;&nbsp;&nbsp;&nbsp; App for adding and tracking progress of your workouts, so to make potential improvements in the future.
 
-## Goal
-&nbsp;&nbsp;&nbsp;&nbsp; *The goal is to track various aspects of the workouts, so to have control and make potential improvements, e.g.:*
-
-## Views
-- Plans:
-  - Days done/left till end of current plan, ex. 1/4 (3 left)
-  - count since last 7 days, ex. 1
-  - count since last 14 days, ex. 3 + average plan and per week
-  - and so on..
-
-- Sessions - counts:
-  - count since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
-  - count since last 7 days, ex. 4 + average per day
-  - count since last 14 days, ex. 4 + average per day, plan and per week
-  - count since last 21 days, ex. 18 (average 3 per plan, 2.3 per week.. per day), 
-  - count since last 28 days
-  - count since last x days
-  - count since last month
-  - count since last 3 months
-  - count since last 6 months
-  - count since last 12 months
-  - count since last year
-  - count since last 2 years (or x years)
-  - and so on..
-  
- - Sessions - durations:
-   - duration since current plan started, ex. 1h 33m 23s (+ 3m 4s since last session), + average per day, per session
-   - duration since last 2 sessions (current + last), ex. 4h 36m + average per day, per session, per plan
-   - duration since last x sessions + average
-   - duration since last 7 days + average
-   - duration since last 14 days, + average 
-   - and so on..
-
-- Exercises:
-  - All
-    - since current plan started, ex. 56/87 (31 left),
-    - since last 7 days, ex. 241, + average since 1before - 48 per session actually done, 31 per day in general)
-    - since last x days, ex. 241,
-    - since last 10 weeks, ex. 2024 (average since then - 38 per session, 31 per day in general, 102 per week in general) 
-   
-  - Per Exercise
-   - chest exercises:
-     - dumbbell press (able to switch between "by time" or "by info type"?):
-       - reps done since current plan started per muscle group, ex. 23 done / 26 planned
-       - reps done since 2 or x plans ex. 45 done / 53 planned / 8 skept
-       - reps done since x days, weeks, so on
-       - now vs the 1 before, ex. 38s now / 42s 1before (average since 1before - 40s)
-       - now vs the 2 before (or x before), ex. 38s now / 44s 2before (average since 2before - 42s)
-       - etc. 7 days, weeks, months and so on ...
-     - exercise x.. and so on...
-   - back exercises.. and so on..
+#### Tech
+&nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, JavaScript, React.js, C#/.NET, AWS, Docker, WebApi
 
 ## API - User
 
@@ -100,15 +51,87 @@ App for managing your workouts.
 
 ## API - Admin
 
+## Concepts Description
 
-## Glossary
+- Workout plan consists of multiple sessions.
+- Each session consists of multiple exercises.
+- Each exercise can be done several times per session.
+- Each exercise consists of several reps.
+- A rep usually consists of two types of motions:
+  - concentric - positive, lifting weight up - push up against gravity
+  - eccentric - negative, lowering weight down - resisiting against gravity
+- A rep might be done with various range of motions:
+  - full - perfect
+  - almost full - almost perfect or not sure
+  - normal
+  - half
+  - other, but for noobs..
+- A rep might be done with different speeds of motions:
+  - Very slow
+  - Slow
+  - Normal
+  - Fast
+  - Very fast
 
-#### Repetition
+- Each session is planned to be done on a certain day - 1st, 2nd, 3rd and so on. 
+- Each session could be done earlier than planned or later.
+- Current session could be done earlier than planned or later.
+- Current workout plan, session, session can be canceled and started over or can be done over longer time span than planned.
 
-#### Workout
+## Views
 
-#### Plan
+### Workout Statistics
 
-#### Exercise
+#### Workout Plans
 
-#### Muscle Group
+- Workout Plans - counts:
+  - Days done/left till end of current plan, ex. 1/4 (3 left)
+  - count since last 7 days, ex. 1
+  - count since last 14 days, ex. 3 + average plan and per week
+  - and so on..
+- Workout Plans - durations:
+  - duration of current plan
+
+#### Sessions
+
+- Sessions - counts:
+  - count since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
+  - count since last 7 days, ex. 4 + average per day
+  - count since last 14 days, ex. 4 + average per day, plan and per week
+  - count since last 21 days, ex. 18 (average 3 per plan, 2.3 per week.. per day), 
+  - count since last 28 days
+  - count since last x days
+  - count since last month
+  - count since last 3 months
+  - count since last 6 months
+  - count since last 12 months
+  - count since last year
+  - count since last 2 years (or x years)
+  - and so on..
+  
+- Sessions - durations:
+   - duration since current plan started, ex. 1h 33m 23s (+ 3m 4s since last session), + average per day, per session
+   - duration since last 2 sessions (current + last), ex. 4h 36m + average per day, per session, per plan
+   - duration since last x sessions + average
+   - duration since last 7 days + average
+   - duration since last 14 days, + average 
+   - and so on..
+
+#### Exercises
+- Exercises - All
+  - since current plan started, ex. 56/87 (31 left),
+  - since last 7 days, ex. 241, + average since 1before - 48 per session actually done, 31 per day in general)
+  - since last x days, ex. 241,
+  - since last 10 weeks, ex. 2024 (average since then - 38 per session, 31 per day in general, 102 per week in general) 
+
+- Exercises - Per Body Part and Exercise
+  - chest exercises:
+    - dumbbell press (able to switch between "by time" or "by info type"?):
+      - reps done since current plan started per muscle group, ex. 23 done / 26 planned
+      - reps done since 2 or x plans ex. 45 done / 53 planned / 8 skept
+      - reps done since x days, weeks, so on
+      - duration now vs the 1 before, ex. 38s now / 42s 1before (average since 1before - 40s)
+      - duration now vs the 2 before (or x before), ex. 38s now / 44s 2before (average since 2before - 42s)
+      - etc. 7 days, weeks, months and so on ...
+    - exercise x.. and so on...
+ - back exercises.. and so on..
