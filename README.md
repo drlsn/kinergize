@@ -105,7 +105,7 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `GET` | `api/me/statistics/exercises` | Get statistics about done exercises | User | [link]() |
 | `GET` | `api/me/statistics/exercises?bodyPart={bodyPartName}` | Get statistics about done exercises per body part | User | [link]() |
 | `GET` | `api/me/statistics/exercises?id={exerciseId}` | Get statistics about done exercises per type (id) | User | [link]() |
-| `GET` | `api/me/statistics/exercises?id={exerciseId}&created:lte:2021-01-20T00:00:00` | Get statistics about done exercises per type (id) since a date time | User | [link]() |
+| `GET` | `api/me/statistics/exercises?id={exerciseId}&created:gte:yyyy-mm-ddThh:mm:ss` | Get statistics about done exercises per type (id) since a date time | User | [link]() |
 
 ## Concepts Description
 
