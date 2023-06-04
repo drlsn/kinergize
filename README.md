@@ -34,9 +34,9 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `GET` | `api/plans/aims/public` | Get all workout plan aims - public | Admin | [link]() |
 | `GET` | `api/plans/aims/private` | Get all workout plan aims - private | Admin | [link]() |
 | `GET` | `api/plans/aims/me` | Get all workout plan aims - own | User | [link]() |
-| `GET` | `api/plans/{planId}/aims` | Get all workout plan aims - of specific plan | User | [link]() |
-| `GET` | `api/plans/{planId}/aims/public` | Get all workout plan aims - public only | Admin | [link]() |
-| `GET` | `api/plans/{planId}/aims/private` | Get all workout plan aims - private only | Admin | [link]() |
+| `GET` | `api/plans/{planId}/aims` | Get all workout plan aims - specific plan | User | [link]() |
+| `GET` | `api/plans/{planId}/aims/public` | Get all workout plan aims - specific plan, public | Admin | [link]() |
+| `GET` | `api/plans/{planId}/aims/private` | Get all workout plan aims - specific plan, private | Admin | [link]() |
 | `POST` | `api/plans/{planId}/aims` | Start a workout plan aim | Admin | [link]() |
 | `GET` | `api/plans/aims/{aimId}` | Get workout plan aim details | User | [link]() |
 | `PUT` | `api/plans/aims/{aimId}` | Update workout plan aim details | User | [link]() |
