@@ -78,7 +78,7 @@ Every endpoint requires at least a certain role to be able to execute it success
 | --- | --- | --- | --- | --- |
 | `GET` | `api/exercises` | Get all exercises | Admin | [link]() |
 | `GET` | `api/exercises/me/` | Get exercises list - own | User | [link]() |
-| `POST` | `api/exercises/me/` | Add private exercise - own | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
+| `POST` | `api/exercises/me/` | Add an exercise - own, private | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
 | `GET` | `api/exercises/public` | Get all exercises - public only | Guest | [link]() |
 | `POST` | `api/exercises/public` | Add an exercise as public | Admin | [link]() |
 | `GET` | `api/exercises/private` | Get all exercises - private only | Admin | [link]() |
