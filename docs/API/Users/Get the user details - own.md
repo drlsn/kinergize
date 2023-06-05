@@ -18,7 +18,7 @@ User
 &nbsp;&nbsp;&nbsp;&nbsp; [*More Info*](../Kinergize%20-%20API%20General%20Info.md)
 
 #### 200
-&nbsp;&nbsp;&nbsp;&nbsp; Array of user ids
+&nbsp;&nbsp;&nbsp;&nbsp; Object with user details
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
 - array of objects
