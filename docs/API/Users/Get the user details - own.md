@@ -1,6 +1,6 @@
 # Get the user details - own
 
-Get a specific user details.
+Get own user details.
 
 ## Request
 
@@ -32,6 +32,6 @@ User
 {
   "id": "user-jnnfgj",
   "name": "John Smith",
-  "email": "john.smith@gmail.com",
+  "email": "john.smith@gmail.com"
 }
 ```
