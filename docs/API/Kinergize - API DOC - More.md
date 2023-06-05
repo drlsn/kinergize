@@ -31,3 +31,11 @@
 | `POST` | `api/me/biometrics/weights` | Add weight biometric | [link]() |
 | `POST` | `api/me/biometrics/measures` | Add measure biometric | [link]() |
 | `GET` | `api/me/biometrics/measures` | Add measure biometric | [link]() |
+
+------------
+### Biometrics
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/biometrics/{biometricId}` | Get the user biometrics | User | [link]() |
+| `POST` | `api/bio` | Add a user | User | [link]() |
+| `PUT` | `api/bio` | Update the user details | User | [link]() |
