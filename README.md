@@ -65,41 +65,47 @@ Every endpoint requires at least a certain role to be able to execute it success
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
 | `GET` | `api/sessions/{sessionId}/aims` | Get all session aims | Admin | [link]() |
-| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public | Guest | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public | Admin | [link]() |
 | `GET` | `api/sessions/{sessionId}/aims/private` | Get all session aims - private | Admin | [link]() |
+| `GET` | `api/sessions/aims/me` | Get all session aims - own | User | [link]() |
 | `POST` | `api/sessions/{sessionId}/aims` | Start a session aim | Admin | [link]() |
-| `GET` | `api/aims/{aimId}` | Get the session aim details | User | [link]() |
-| `PUT` | `api/aims/{aimId}` | Update the session aim details | User | [link]() |
-| `DELETE` | `api/aims/{aimId}` | Finish the session aim | User | [link]() |
+| `GET` | `api/sessions/aims/{aimId}` | Get the session aim details | User | [link]() |
+| `PUT` | `api/sessions/aims/{aimId}` | Update the session aim details | User | [link]() |
+| `DELETE` | `api/sessions/aims/{aimId}` | Finish the session aim | User | [link]() |
 
-### Exercises - General
+### Exercises
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/exercises` | Get all exercises - public and private | Admin | [link]() |
+| `GET` | `api/exercises` | Get all exercises | Admin | [link]() |
+| `GET` | `api/exercises/me/` | Get exercises list - own | User | [link]() |
+| `POST` | `api/exercises/me/` | Add private exercise - own | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
+| `GET` | `api/exercises/public` | Get all exercises - public only | Guest | [link]() |
+| `POST` | `api/exercises/public` | Add an exercise as public | Admin | [link]() |
+| `GET` | `api/exercises/private` | Get all exercises - private only | Admin | [link]() |
 | `GET` | `api/exercises/{exerciseId}` | Get the exercise details | User | [link]() |
 | `PUT` | `api/exercises/{exerciseId}` | Update the exercise details | User | [link]() |
 | `DELETE` | `api/exercises/{exerciseId}` | Delete the exercise | User | [link]() |
-| `POST` | `api/exercises/public` | Add an exercise as public | Admin | [link]() |
-| `GET` | `api/exercises/public` | Get all exercises - public only | Guest | [link]() |
-| `GET` | `api/exercises/private` | Get all exercises - private only | Admin | [link]() |
 
-### Exercises - Own
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
+| `GET` | `api/plans/{planId}/exercises` | Get the workout plan exercises list | Guest | [link]() |
+
+### Exercise Aims
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `POST` | `api/me/exercises` | Add own private exercise | User | [link](docs/API/User/Exercises/Create%20own%20Exercise.md) |
-| `GET` | `api/me/exercises` | Get own exercises list | User | [link]() |
+| `GET` | `api/exercises/{exerciseId}/aims` | Get all exercise aims | Admin | [link]() |
+| `GET` | `api/exercises/{exerciseId}/aims/public` | Get all exercise aims - public | Admin | [link]() |
+| `GET` | `api/exercises/{exerciseId}/aims/private` | Get all exercise aims - private | Admin | [link]() |
+| `GET` | `api/exercises/aims/me` | Get all exercise aims - own | User | [link]() |
+| `POST` | `api/exercises/{exerciseId}/aims` | Start an exercise aim | Admin | [link]() |
+| `GET` | `api/exercises/aims/{aimId}` | Get the exercise aim details | User | [link]() |
+| `PUT` | `api/exercises/aims/{aimId}` | Update the exercise aim details | User | [link]() |
+| `DELETE` | `api/exercises/aims/{aimId}` | Finish the exercise aim | User | [link]() |
 
-### Exercises - By Workout Plan 
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/plans/{planId}/exercises` | Get workout plan exercises list | Guest | [link]() |
-
-### Exercises - Operations
-| HTTP Method | Endpoint | Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `POST` | `api/sessions/{sessionId}/exercises/{exerciseId}/start` | Start the exercise | User | [link]() |
-| `POST` | `api/sessions/{sessionId}/exercises/{exerciseId}/finish` | Finish the exercise | User | [link]() |
-| `PUT` | `api/sessions/{sessionId}/exercises/{exerciseId}` | Update the exercise details | User | [link]() |
+| `POST` | `api/sessions/aims/{sessionAimId}/exercises/{exerciseId}/aims` | Start an exercise aim of a session | User | [link]() |
+| `DELETE` | `api/sessions/aims/{sessionAimId}/exercises/{exerciseId}/aims/{exerciseAimId}` | Finish an exercise aim of a session | User | [link]() |
 
 ### Statistics
 | HTTP Method | Endpoint | Short Description | Role | Details |
