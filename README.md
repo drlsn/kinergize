@@ -21,11 +21,11 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `GET` | `api/plans/me` | Get all workout plans - own | User | [link]() |
 | `POST` | `api/plans/me` | Add a workout plan - own, private | User | [link]() |
 | `GET` | `api/plans/public` | Get all workout plans - public | Guest | [link]() |
+| `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link]() |
 | `GET` | `api/plans/private` | Get all workout plans - private | Admin | [link]() |
 | `GET` | `api/plans/{planId}` | Get the workout plan details | User | [link]() |
 | `PUT` | `api/plans/{planId}` | Update the workout plan details | User | [link]() |
 | `DELETE` | `api/plans/{planId}` | Delete the workout plan | User | [link]() |
-| `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link]() |
 
 ### Workout Plan Aims
 | HTTP Method | Endpoint | Description | Role | Details |
@@ -38,26 +38,22 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `GET` | `api/plans/{planId}/aims/public` | Get all workout plan aims - specific plan, public | Admin | [link]() |
 | `GET` | `api/plans/{planId}/aims/private` | Get all workout plan aims - specific plan, private | Admin | [link]() |
 | `POST` | `api/plans/{planId}/aims` | Start a workout plan aim | Admin | [link]() |
-| `GET` | `api/plans/aims/{aimId}` | Get workout plan aim details | User | [link]() |
-| `PUT` | `api/plans/aims/{aimId}` | Update workout plan aim details | User | [link]() |
+| `GET` | `api/plans/aims/{aimId}` | Get the workout plan aim details | User | [link]() |
+| `PUT` | `api/plans/aims/{aimId}` | Update the workout plan aim details | User | [link]() |
 | `DELETE` | `api/plans/aims/{aimId}` | Finish the workout plan aim | User | [link]() |
 
 ### Sessions - General
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/sessions` | Get all sessions - public and private | Admin | [link]() |
+| `GET` | `api/sessions` | Get all sessions | Admin | [link]() |
+| `GET` | `api/sessions/me` | Get a session list - own | User | [link]() |
+| `POST` | `api/sessions/me` | Add a session - own, private | User | [link]() |
+| `GET` | `api/sessions/public` | Get all sessions - public | Guest | [link]() |
+| `POST` | `api/sessions/public` | Add a session as public | Admin | [link]() |
+| `GET` | `api/sessions/private` | Get all sessions - private | Admin | [link]() |
 | `GET` | `api/sessions/{sessionId}` | Get the session details | User | [link]() |
 | `PUT` | `api/sessions/{sessionId}` | Update the sessions details | User | [link]() |
 | `DELETE` | `api/sessions/{sessionId}` | Delete the session | User | [link]() |
-| `POST` | `api/sessions/public` | Add a session as public | Admin | [link]() |
-| `GET` | `api/sessions/public` | Get all sessions - public only | Guest | [link]() |
-| `GET` | `api/sessions/private` | Get all sessions - private only | Admin | [link]() |
-
-### Sessions - Own
-| HTTP Method | Endpoint | Short Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `POST` | `api/me/sessions` | Add own private session | User | [link]() |
-| `GET` | `api/me/sessions` | Get own session list | User | [link]() |
 
 ### Sessions - By Workout Plan
 | HTTP Method | Endpoint | Description | Role | Details |
@@ -75,9 +71,9 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Session Aims - General
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/sessions/{sessionId}/aims` | Get all session aims - public and private | Admin | [link]() |
-| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public only | Guest | [link]() |
-| `GET` | `api/sessions/{sessionId}/aims/private` | Get all session aims - private only | Admin | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims` | Get all session aims | Admin | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public | Guest | [link]() |
+| `GET` | `api/sessions/{sessionId}/aims/private` | Get all session aims - private | Admin | [link]() |
 | `POST` | `api/sessions/{sessionId}/aims` | Start a session aim | Admin | [link]() |
 | `GET` | `api/aims/{aimId}` | Get the session aim details | User | [link]() |
 | `PUT` | `api/aims/{aimId}` | Update the session aim details | User | [link]() |
