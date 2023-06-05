@@ -26,30 +26,30 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Workout Plans
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/plans` | Get all workout plans | Admin | [link](/docs/API/Workout Plans/) |
-| `GET` | `api/plans/me` | Get all workout plans - own | User | [link](/docs/API/Workout Plans/) |
-| `POST` | `api/plans/me` | Add a workout plan - own, private | User | [link](/docs/API/Workout Plans/) |
-| `GET` | `api/plans/public` | Get all workout plans - public | Guest | [link](/docs/API/Workout Plans/) |
-| `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link](/docs/API/Workout Plans/) |
-| `GET` | `api/plans/private` | Get all workout plans - private | Admin | [link](/docs/API/Workout Plans/) |
-| `GET` | `api/plans/{planId}` | Get the workout plan details | User | [link](/docs/API/Workout Plans/) |
-| `PUT` | `api/plans/{planId}` | Update the workout plan details | User | [link](/docs/API/Workout Plans/) |
-| `DELETE` | `api/plans/{planId}` | Delete the workout plan | User | [link](/docs/API/Workout Plans/) |
+| `GET` | `api/plans` | Get all workout plans | Admin | [link](/docs/API/Workout%20Plans/) |
+| `GET` | `api/plans/me` | Get all workout plans - own | User | [link](/docs/API/Workout%20Plans/) |
+| `POST` | `api/plans/me` | Add a workout plan - own, private | User | [link](/docs/API/Workout%20Plans/) |
+| `GET` | `api/plans/public` | Get all workout plans - public | Guest | [link](/docs/API/Workout%20Plans/) |
+| `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link](/docs/API/Workout%20Plans/) |
+| `GET` | `api/plans/private` | Get all workout plans - private | Admin | [link](/docs/API/Workout%20Plans/) |
+| `GET` | `api/plans/{planId}` | Get the workout plan details | User | [link](/docs/API/Workout%20Plans/) |
+| `PUT` | `api/plans/{planId}` | Update the workout plan details | User | [link](/docs/API/Workout%20Plans/) |
+| `DELETE` | `api/plans/{planId}` | Delete the workout plan | User | [link](/docs/API/Workout%20Plans/) |
 
 ### Workout Plan Aims
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/plans/aims` | Get all workout plan aims | Admin | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/aims/public` | Get all workout plan aims - public | Admin | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/aims/private` | Get all workout plan aims - private | Admin | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/aims/me` | Get all workout plan aims - own | User | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/{planId}/aims` | Get all workout plan aims - specific plan | User | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/{planId}/aims/public` | Get all workout plan aims - specific plan, public | Admin | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/{planId}/aims/private` | Get all workout plan aims - specific plan, private | Admin | [link](/docs/API/Workout Plans Aims/) |
-| `POST` | `api/plans/{planId}/aims` | Start a workout plan aim | Admin | [link](/docs/API/Workout Plans Aims/) |
-| `GET` | `api/plans/aims/{aimId}` | Get the workout plan aim details | User | [link](/docs/API/Workout Plans Aims/) |
-| `PUT` | `api/plans/aims/{aimId}` | Update the workout plan aim details | User | [link](/docs/API/Workout Plans Aims/) |
-| `DELETE` | `api/plans/aims/{aimId}` | Finish the workout plan aim | User | [link](/docs/API/Workout Plans Aims/) |
+| `GET` | `api/plans/aims` | Get all workout plan aims | Admin | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/aims/public` | Get all workout plan aims - public | Admin | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/aims/private` | Get all workout plan aims - private | Admin | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/aims/me` | Get all workout plan aims - own | User | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/{planId}/aims` | Get all workout plan aims - specific plan | User | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/{planId}/aims/public` | Get all workout plan aims - specific plan, public | Admin | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/{planId}/aims/private` | Get all workout plan aims - specific plan, private | Admin | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `POST` | `api/plans/{planId}/aims` | Start a workout plan aim | Admin | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `GET` | `api/plans/aims/{aimId}` | Get the workout plan aim details | User | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `PUT` | `api/plans/aims/{aimId}` | Update the workout plan aim details | User | [link](/docs/API/Workout%20Plans%20Aims/) |
+| `DELETE` | `api/plans/aims/{aimId}` | Finish the workout plan aim | User | [link](/docs/API/Workout%20Plans%20Aims/) |
 
 ### Sessions
 | HTTP Method | Endpoint | Short Description | Role | Details |
@@ -73,14 +73,14 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Session Aims
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/sessions/{sessionId}/aims` | Get all session aims | Admin | [link](/docs/API/Sessions Aims/) |
-| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public | Admin | [link](/docs/API/Sessions Aims/) |
-| `GET` | `api/sessions/{sessionId}/aims/private` | Get all session aims - private | Admin | [link](/docs/API/Sessions Aims/) |
-| `GET` | `api/sessions/aims/me` | Get all session aims - own | User | [link](/docs/API/Sessions Aims/) |
-| `POST` | `api/sessions/{sessionId}/aims` | Start a session aim | Admin | [link](/docs/API/Sessions Aims/) |
-| `GET` | `api/sessions/aims/{aimId}` | Get the session aim details | User | [link](/docs/API/Sessions Aims/) |
-| `PUT` | `api/sessions/aims/{aimId}` | Update the session aim details | User | [link](/docs/API/Sessions Aims/) |
-| `DELETE` | `api/sessions/aims/{aimId}` | Finish the session aim | User | [link](/docs/API/Sessions Aims/) |
+| `GET` | `api/sessions/{sessionId}/aims` | Get all session aims | Admin | [link](/docs/API/Sessions%20Aims/) |
+| `GET` | `api/sessions/{sessionId}/aims/public` | Get all session aims - public | Admin | [link](/docs/API/Sessions%20Aims/) |
+| `GET` | `api/sessions/{sessionId}/aims/private` | Get all session aims - private | Admin | [link](/docs/API/Sessions%20Aims/) |
+| `GET` | `api/sessions/aims/me` | Get all session aims - own | User | [link](/docs/API/Sessions%20Aims/) |
+| `POST` | `api/sessions/{sessionId}/aims` | Start a session aim | Admin | [link](/docs/API/Sessions%20Aims/) |
+| `GET` | `api/sessions/aims/{aimId}` | Get the session aim details | User | [link](/docs/API/Sessions%20Aims/) |
+| `PUT` | `api/sessions/aims/{aimId}` | Update the session aim details | User | [link](/docs/API/Sessions%20Aims/) |
+| `DELETE` | `api/sessions/aims/{aimId}` | Finish the session aim | User | [link](/docs/API/Sessions%20Aims/) |
 
 ### Exercises
 | HTTP Method | Endpoint | Short Description | Role | Details |
@@ -102,19 +102,19 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Exercise Aims
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/exercises/{exerciseId}/aims` | Get all exercise aims | Admin | [link](/docs/API/Exercises Aims/) |
-| `GET` | `api/exercises/{exerciseId}/aims/public` | Get all exercise aims - public | Admin | [link](/docs/API/Exercises Aims/) |
-| `GET` | `api/exercises/{exerciseId}/aims/private` | Get all exercise aims - private | Admin | [link](/docs/API/Exercises Aims/) |
-| `GET` | `api/exercises/aims/me` | Get all exercise aims - own | User | [link](/docs/API/Exercises Aims/) |
-| `POST` | `api/exercises/{exerciseId}/aims` | Start an exercise aim | Admin | [link](/docs/API/Exercises Aims/) |
-| `GET` | `api/exercises/aims/{aimId}` | Get the exercise aim details | User | [link](/docs/API/Exercises Aims/) |
-| `PUT` | `api/exercises/aims/{aimId}` | Update the exercise aim details | User | [link](/docs/API/Exercises Aims/) |
-| `DELETE` | `api/exercises/aims/{aimId}` | Finish the exercise aim | User | [link]/docs/API/Exercises Aims/() |
+| `GET` | `api/exercises/{exerciseId}/aims` | Get all exercise aims | Admin | [link](/docs/API/Exercises%20Aims/) |
+| `GET` | `api/exercises/{exerciseId}/aims/public` | Get all exercise aims - public | Admin | [link](/docs/API/Exercises%20Aims/) |
+| `GET` | `api/exercises/{exerciseId}/aims/private` | Get all exercise aims - private | Admin | [link](/docs/API/Exercises%20Aims/) |
+| `GET` | `api/exercises/aims/me` | Get all exercise aims - own | User | [link](/docs/API/Exercises%20Aims/) |
+| `POST` | `api/exercises/{exerciseId}/aims` | Start an exercise aim | Admin | [link](/docs/API/Exercises%20Aims/) |
+| `GET` | `api/exercises/aims/{aimId}` | Get the exercise aim details | User | [link](/docs/API/Exercises%20Aims/) |
+| `PUT` | `api/exercises/aims/{aimId}` | Update the exercise aim details | User | [link](/docs/API/Exercises%20Aims/) |
+| `DELETE` | `api/exercises/aims/{aimId}` | Finish the exercise aim | User | [link](/docs/API/Exercises%20Aims/) |
 
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `POST` | `api/sessions/aims/{sessionAimId}/exercises/{exerciseId}/aims` | Start an exercise aim of a session | User | [link](/docs/API/Exercises Aims/) |
-| `DELETE` | `api/sessions/aims/{sessionAimId}/exercises/{exerciseId}/aims/{exerciseAimId}` | Finish an exercise aim of a session | User | [link](/docs/API/Exercises Aims/) |
+| `POST` | `api/sessions/aims/{sessionAimId}/exercises/{exerciseId}/aims` | Start an exercise aim of a session | User | [link](/docs/API/Exercises%20Aims/) |
+| `DELETE` | `api/sessions/aims/{sessionAimId}/exercises/{exerciseId}/aims/{exerciseAimId}` | Finish an exercise aim of a session | User | [link](/docs/API/Exercises%20Aims/) |
 
 ### Statistics
 | HTTP Method | Endpoint | Short Description | Role | Details |
