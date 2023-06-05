@@ -17,6 +17,14 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Workout Plans
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
+| `GET` | `api/users` | Get all users | Admin | [link]() |
+| `GET` | `api/users/{userId}` | Get the user details | User | [link]() |
+| `POST` | `api/users` | Add a user | User | [link]() |
+| `PUT` | `api/users` | Update the user details | User | [link]() |
+
+### Workout Plans
+| HTTP Method | Endpoint | Description | Role | Details |
+| --- | --- | --- | --- | --- |
 | `GET` | `api/plans` | Get all workout plans | Admin | [link]() |
 | `GET` | `api/plans/me` | Get all workout plans - own | User | [link]() |
 | `POST` | `api/plans/me` | Add a workout plan - own, private | User | [link]() |
