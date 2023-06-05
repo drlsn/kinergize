@@ -42,7 +42,7 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `PUT` | `api/plans/aims/{aimId}` | Update the workout plan aim details | User | [link]() |
 | `DELETE` | `api/plans/aims/{aimId}` | Finish the workout plan aim | User | [link]() |
 
-### Sessions - General
+### Sessions
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
 | `GET` | `api/sessions` | Get all sessions | Admin | [link]() |
@@ -55,20 +55,13 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `PUT` | `api/sessions/{sessionId}` | Update the sessions details | User | [link]() |
 | `DELETE` | `api/sessions/{sessionId}` | Delete the session | User | [link]() |
 
-### Sessions - By Workout Plan
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
 | `GET` | `api/plans/{planId}/sessions` | Get sessions list of the workout plan | Guest | [link]() |
 | `POST` | `api/plans/{planId}/sessions` | Add a session to the workout plan | User | [link]() |
 | `DELETE` | `api/plans/{planId}/sessions/{sessionId}` | Remove a session from the workout plan | User | [link]() |
 
-### Sessions - Operations
-| HTTP Method | Endpoint | Description | Role | Details |
-| --- | --- | --- | --- | --- |
-| `POST` | `api/sessions/{sessionId}/start` | Start a workout session | User | [link]() |
-| `POST` | `api/sessions/{sessionId}/finish` | Finish a workout session | User | [link]() |
-
-### Session Aims - General
+### Session Aims
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
 | `GET` | `api/sessions/{sessionId}/aims` | Get all session aims | Admin | [link]() |
