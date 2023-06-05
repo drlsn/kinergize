@@ -10,17 +10,18 @@
 The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documentation/web-api). 
 
 Every endpoint requires at least a certain role to be able to execute it successfully. Depending on a role the same endpoint my return different amounts of data. The roles, from the most to the least privileged, are:
-- Admin
-- User
-- Guest - does not requires an authorization token
+- Admin - requires an authorization token with the role assigned
+- User - requires an authorization token
+- Guest - does not require an authorization token
 
-### Workout Plans
+### Users
 | HTTP Method | Endpoint | Description | Role | Details |
 | --- | --- | --- | --- | --- |
 | `GET` | `api/users` | Get all users | Admin | [link]() |
-| `GET` | `api/users/{userId}` | Get the user details | User | [link]() |
+| `GET` | `api/users/{userId}` | Get the user details | Admin | [link]() |
 | `POST` | `api/users` | Add a user | User | [link]() |
-| `PUT` | `api/users` | Update the user details | User | [link]() |
+| `GET` | `api/me` | Get the user details - own | User | [link]() |
+| `PUT` | `api/me` | Update the user details | User | [link]() |
 
 ### Workout Plans
 | HTTP Method | Endpoint | Description | Role | Details |
