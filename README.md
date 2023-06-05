@@ -110,13 +110,13 @@ Every endpoint requires at least a certain role to be able to execute it success
 ### Statistics
 | HTTP Method | Endpoint | Short Description | Role | Details |
 | --- | --- | --- | --- | --- |
-| `GET` | `api/me/statistics` | Get statistics about workouts | User | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
-| `GET` | `api/me/statistics/plans` | Get statistics about done workout plans | User | [link]() |
-| `GET` | `api/me/statistics/sessions` | Get statistics about done sessions | User | [link]() |
-| `GET` | `api/me/statistics/exercises` | Get statistics about done exercises | User | [link]() |
-| `GET` | `api/me/statistics/exercises?bodyPart={bodyPartName}` | Get statistics about done exercises per body part | User | [link]() |
-| `GET` | `api/me/statistics/exercises?id={exerciseId}` | Get statistics about done exercises per type (id) | User | [link]() |
-| `GET` | `api/me/statistics/exercises?id={exerciseId}&created:gte:yyyy-mm-ddThh:mm:ss` | Get statistics about done exercises per type (id) since a date time | User | [link]() |
+| `GET` | `api/statistics/me` | Get statistics about workouts | User | [link](/docs/API/User/Statistics/Get%20Workouts%20Statistics.md) |
+| `GET` | `api/statistics/me/plans` | Get statistics about done workout plans | User | [link]() |
+| `GET` | `api/statistics/me/sessions` | Get statistics about done sessions | User | [link]() |
+| `GET` | `api/statistics/me/exercises` | Get statistics about done exercises | User | [link]() |
+| `GET` | `api/statistics/me/exercises?bodyPart={bodyPartName}` | Get statistics about done exercises per body part | User | [link]() |
+| `GET` | `api/statistics/me/exercises?id={exerciseId}` | Get statistics about done exercises per type (id) | User | [link]() |
+| `GET` | `api/statistics/me/exercises?id={exerciseId}&created:gte:yyyy-mm-ddThh:mm:ss` | Get statistics about done exercises per type (id) since a date time | User | [link]() |
 
 ## Concepts Description
 
