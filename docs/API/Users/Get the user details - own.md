@@ -8,7 +8,7 @@ Get a specific user details.
 &nbsp;&nbsp;&nbsp;&nbsp; GET
 
 ### URL
-&nbsp;&nbsp;&nbsp;&nbsp; api/users/{userId}
+&nbsp;&nbsp;&nbsp;&nbsp; api/users/me
 
 ### Minimum Role Required
 User
@@ -26,10 +26,10 @@ User
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
 [
-  "user-id-1",
-  "user-id-2",  
-  "user-id-3",  
-  "user-id-4",  
-  "user-id-5"  
+  "user-sdfbse",
+  "user-jnnfgj",  
+  "user-asdfaw",  
+  "user-ewseft",  
+  "user-asdvew"  
 ]
 ```
