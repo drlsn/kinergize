@@ -10,54 +10,26 @@ Get a list of all users, for administrators only.
 ### URL
 &nbsp;&nbsp;&nbsp;&nbsp; api/users
 
-### Headers Required
-- Content-Type - application/json
-- Authorization - "Bearer Token"
+### Minimum Role Required
+Admin
 
-## Response
+## Success Response
+
+&nbsp;&nbsp;&nbsp;&nbsp; [*More Info*](../Kinergize%20-%20API%20General%20Info.md)
 
 #### 200
-&nbsp;&nbsp;&nbsp;&nbsp; Array of users and their names
+&nbsp;&nbsp;&nbsp;&nbsp; Array of user ids
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
-- array of objects
-  - object
-    - id - string
-    - name - string
-    - email - string
-
-#### 401
-&nbsp;&nbsp;&nbsp;&nbsp; Missing, bad or expired access token.
-
-&nbsp;&nbsp;&nbsp;&nbsp; *Fields*
-- error - string
-  - status - integer
-  - message - string
+- array of strings
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
-{
-  "error": {
-    "status": 401,
-    "message": "string"
-  }
-}
-```
-
-#### 403
-&nbsp;&nbsp;&nbsp;&nbsp; Authorization token is valid, but endpoint is forbidden for the role.
-
-&nbsp;&nbsp;&nbsp;&nbsp; *Fields*
-- error - string
-  - status - integer
-  - message - string
-
-&nbsp;&nbsp;&nbsp;&nbsp; *Example*
-```
-{
-  "error": {
-    "status": 401,
-    "message": "string"
-  }
-}
+[
+  "user-sdfbse",
+  "user-jnnfgj",  
+  "user-asdfaw",  
+  "user-ewseft",  
+  "user-asdvew"  
+]
 ```
