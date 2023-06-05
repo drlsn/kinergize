@@ -21,15 +21,17 @@ User
 &nbsp;&nbsp;&nbsp;&nbsp; Array of user ids
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
-- array of strings
+- array of objects
+  - object
+    - id - string
+    - name - string
+    - email - string
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
-[
-  "user-sdfbse",
-  "user-jnnfgj",  
-  "user-asdfaw",  
-  "user-ewseft",  
-  "user-asdvew"  
-]
+{
+  "id": "user-jnnfgj",
+  "name": "John Smith",
+  "email": "john.smith@gmail.com",
+}
 ```
