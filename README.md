@@ -229,4 +229,10 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
 
 ## System Level Design
 
-![System Level Context Diagram](/docs/images/Kinergize%20-%20System%20Level%20Context%20Diagram.png)
+![System Level Context Diagram](/docs/images/Architecture/Kinergize%20-%20System%20Level%20Context%20Diagram.png)
+
+## UI Design
+
+#### Homepage
+
+![Homepage UI Design](/docs/images/UI%20Design/Kinergize%20-%20UI%20Design%20-%20Homepage.png)
