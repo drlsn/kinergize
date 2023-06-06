@@ -5,7 +5,6 @@
 #### Tech
 &nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, JavaScript, React.js, C#/.NET, AWS, Docker, WebApi
 
-
 #### Team
 | Name | Roles | Github | Discord | 
 | --- | --- | --- |  --- |
@@ -227,3 +226,7 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
       - etc. 7 days, weeks, months and so on ...
     - exercise x.. and so on...
  - back exercises.. and so on..
+
+## System Level Design
+
+![System Level Context Diagram](/docs/images/Kinergize%20-%20System%20Level%20Context%20Diagram.png)
