@@ -35,9 +35,8 @@ User
         - name - string; localized name of the property value
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
-```                                                                                                                             
-/api/exercises/{exerciseId}
-{
+```                                           
+{          
   "pageTitle": "Exercise Details",
   "name": "Lying Chest Dumbbell Press",
   "description": "...",
