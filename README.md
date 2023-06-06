@@ -1,5 +1,12 @@
 # Kinergize
 
+[1. General](#general)  
+[2. API](#api)  
+[3. Architecture](#architecture)  
+[4. UI Design](#ui-design)  
+
+## General
+
 &nbsp;&nbsp;&nbsp;&nbsp; App for adding and tracking progress of your workouts, so to make potential improvements in the future.
 
 #### Tech
@@ -227,8 +234,9 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
     - exercise x.. and so on...
  - back exercises.. and so on..
 
-## System Level Design
+## Architecture
 
+#### System Context - Level 0
 ![System Level Context Diagram](/docs/images/Architecture/Kinergize%20-%20System%20Level%20Context%20Diagram.png)
 
 ## UI Design
