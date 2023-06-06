@@ -35,18 +35,19 @@ User
         - name - string; localized name of the property value
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
-```
+```                                                                                                                             
+/api/exercises/{exerciseId}
 {
   "pageTitle": "Exercise Details",
   "name": "Lying Chest Dumbbell Press",
   "description": "...",
   "properties": [
-	{
+    {
 	  "type": "author",
 	  "name": "Author",
 	  "valueId": "public",
 	  "values": [
-	    {
+		{
 		  "id": "public",
 		  "name": "Public"
 		},
@@ -65,7 +66,7 @@ User
 	  "name": "Discipline",
 	  "valueId": "weight-lifting",
 	  "values": [
-	    {
+		{
 		  "id": "weight-lifting",
 		  "name": "Weight Lifting"
 		},
@@ -78,7 +79,8 @@ User
 		  "name": "Any"
 		}
 	  ]
-	}
+    }
   ]
 }
+
 ```
