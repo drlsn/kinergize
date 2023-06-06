@@ -4,6 +4,8 @@
 [2. API](#api)  
 [3. Architecture](#architecture)  
 [4. UI Design](#ui-design)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Mockups](#mockups)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.2 View Descriptions](#view-descriptions)  
 
 ## General
 
@@ -176,11 +178,24 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
 - Current session could be done earlier than planned or later.
 - Current workout plan, session, session can be canceled and started over or can be done over longer time span than planned.
 
-## Views
+## Architecture
 
-### Workout Statistics
+#### System Context - Level 0
+![System Level Context Diagram](/docs/images/Architecture/Kinergize%20-%20System%20Level%20Context%20Diagram.png)
 
-#### Workout Plans
+## UI Design
+
+### Mockups
+
+#### Homepage
+
+![Homepage UI Design](/docs/images/UI%20Design/Kinergize%20-%20UI%20Design%20-%20Homepage.png)
+
+### View Descriptions
+
+#### Workout Statistics
+
+##### Workout Plans
 
 - Workout Plans - counts:
   - Days done/left till end of current plan, ex. 1/4 (3 left)
@@ -190,7 +205,7 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
 - Workout Plans - durations:
   - duration of current plan
 
-#### Sessions
+##### Sessions
 
 - Sessions - counts:
   - count since current plan started, ex. current plan has 4 days, it started April 14th, now is April 16th, however you skept a session yesterday, so it is still 1 now, after doing todays session it will 2, or maybe you do two at once, so it will be 3?
@@ -215,7 +230,7 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
    - duration since last 14 days, + average 
    - and so on..
 
-#### Exercises
+##### Exercises
 - Exercises - All
   - since current plan started, ex. 56/87 (31 left),
   - since last 7 days, ex. 241, + average since 1before - 48 per session actually done, 31 per day in general)
@@ -234,13 +249,3 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
     - exercise x.. and so on...
  - back exercises.. and so on..
 
-## Architecture
-
-#### System Context - Level 0
-![System Level Context Diagram](/docs/images/Architecture/Kinergize%20-%20System%20Level%20Context%20Diagram.png)
-
-## UI Design
-
-#### Homepage
-
-![Homepage UI Design](/docs/images/UI%20Design/Kinergize%20-%20UI%20Design%20-%20Homepage.png)
