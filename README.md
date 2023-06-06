@@ -5,6 +5,14 @@
 #### Tech
 &nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, JavaScript, React.js, C#/.NET, AWS, Docker, WebApi
 
+
+#### Team
+| Name | Roles | Github | Discord | 
+| --- | --- | --- |  --- |
+| mrfox | Frontend | https://github.com/mr-fox93 |  mrfox#0699 |
+| kamil__mlu | UI Design | https://github.com/kamilMalinowski | kamil__mlu#4278 |
+| daretski | Backend / Management | https://github.com/drlsn | daretsuki#4793   | 
+
 ## API
 
 The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documentation/web-api). 
