@@ -11,7 +11,7 @@ Get own user details.
 &nbsp;&nbsp;&nbsp;&nbsp; api/users/me
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Query Parameters*
-- scope - string; optional; options: minimal, full; define how much detail data to receive
+- scope - string; optional; options: min(default), full; define how much detail data to receive
 
 ### Minimum Role Required
 User
