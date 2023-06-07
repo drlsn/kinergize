@@ -8,7 +8,7 @@ Add your a workout plan as public, for administartors only.
 &nbsp;&nbsp;&nbsp;&nbsp; POST
 
 ### URL
-&nbsp;&nbsp;&nbsp;&nbsp; api/plans/me
+&nbsp;&nbsp;&nbsp;&nbsp; api/plans/public
 
 ### Minimum Role Required
 &nbsp;&nbsp;&nbsp;&nbsp; Admin
