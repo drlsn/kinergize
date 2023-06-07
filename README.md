@@ -48,7 +48,7 @@ Every endpoint requires at least a certain role to be able to execute it success
 | `GET` | `api/plans/public` | Get all workout plans - public | Guest | [link](/docs/API/Workout%20Plans/Get%20all%20workout%20plans%20-%20public.md) |
 | `POST` | `api/plans/public` | Add a workout plan as public | Admin | [link](/docs/API/Workout%20Plans/Add%20a%20workout%20plan%20as%20public.md) |
 | `GET` | `api/plans/private` | Get all workout plans - private | Admin | [link](/docs/API/Workout%20Plans/Get%20all%20workout%20plans%20-%20private.md) |
-| `GET` | `api/plans/{planId}` | Get the workout plan details | User | [link](/docs/API/Workout%20Plans/Get%20the%20workout%20plan%20details.md) |
+| `GET` | `api/plans/{planId}` | Get the workout plan details | Guest | [link](/docs/API/Workout%20Plans/Get%20the%20workout%20plan%20details.md) |
 | `PUT` | `api/plans/{planId}` | Update the workout plan details | User | [link](/docs/API/Workout%20Plans/Update%20the%20workout%20plan%20details.md) |
 | `DELETE` | `api/plans/{planId}` | Delete the workout plan | User | [link](/docs/API/Workout%20Plans/Delete%20the%20workout%20plan.md) |
 
