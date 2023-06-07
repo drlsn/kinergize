@@ -18,21 +18,27 @@ Admin
 &nbsp;&nbsp;&nbsp;&nbsp; [*More Info*](../Kinergize%20-%20API%20General%20Info.md)
 
 #### 200
-&nbsp;&nbsp;&nbsp;&nbsp; Object containing an array of user ids
+&nbsp;&nbsp;&nbsp;&nbsp; Object containing an array of users
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
 - object
-  - array of strings
+  - values - array of objects
+    - object
+      - id - string
+      - name - string
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
 {
-  [
-    "user-sdfbse",
-    "user-jnnfgj",  
-    "user-asdfaw",  
-    "user-ewseft",  
-    "user-asdvew"  
+  "values": [
+    {
+      "id": "user-sdfbse",
+      "name": "Douglas"
+    },
+    {
+      "id": "user-asdfaw"",
+      "name": "Sean"
+    },
   ]
 }
 ```
