@@ -21,20 +21,18 @@ User
 &nbsp;&nbsp;&nbsp;&nbsp; [*More Info*](../Kinergize%20-%20API%20General%20Info.md)
 
 ### 200
-&nbsp;&nbsp;&nbsp;&nbsp; Object with user details
+&nbsp;&nbsp;&nbsp;&nbsp; Object with workout plan details
 
 #### *Fields*
-- array of objects
-  - object
-    - id - string
-    - name - string
-    - email - string
-    - sessionsPerDay - int - count of preferred sessions to be performed per day
-    - sessions - array of objects
-      - object
-        - id - id of a session
-        - type - type of a session; active, rest
-        - name - name of a session
+- object
+  - id - string
+  - name - string
+  - sessionsPerDay - int - count of preferred sessions to be performed per day
+  - sessions - array of objects
+    - object
+      - id - id of a session
+      - type - type of a session; active, rest
+      - name - name of a session
 
 #### *Examples*  
 ```
