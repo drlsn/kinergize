@@ -29,7 +29,7 @@ User
     - id - string
     - name - string
     - email - string
-    - planAimId - string - id of current workout plan
+    - sessionsPerDay - int - count of preferred sessions to be performed per day
     - sessions - array of objects
       - object
         - id - id of a session
