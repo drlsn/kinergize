@@ -30,7 +30,7 @@ Every endpoint requires at least a certain role to be able to execute it success
 - User - requires an authorization token
 - Guest - does not require any authorization token
 
-More information about the API can be found [here](/docs/API/Kinergize%20-%20API%20General%20Info.md).
+More information about the API can be found in [Kinergize - API General Info](/docs/API/Kinergize%20-%20API%20General%20Info.md) document.
 
 ### Users
 | HTTP Method | Endpoint | Description | Role | Details |
