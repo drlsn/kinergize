@@ -3,8 +3,8 @@
 [1. General](#general)  
 [2. API](#api)  
 [3. Architecture](#architecture)  
-[4. UI Design](#ui-design)
-&nbsp;&nbsp;&nbsp;&nbsp;[4.1 View Descriptions](#view-descriptions)
+[4. UI Design](#ui-design)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 View Descriptions](#view-content-analisys)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Mockups](#mockups)  
 
 ## General
@@ -187,13 +187,15 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
 
 ## UI Design
 
-### Mockups
+### View Content Analisys
 
-#### Homepage
+#### Workout Plans
 
-![Homepage UI Design](/docs/images/UI%20Design/Kinergize%20-%20UI%20Design%20-%20Homepage.png)
+![Workout Plans UI Content](/docs/images/UI%20Content/Workout%20Plans.png)
 
-### View Descriptions
+#### Workout Plan Details
+
+![Workout Plan Details UI Content](/docs/images/UI%20Content/Workout%20Plan%20Details.png)
 
 #### Workout Statistics
 
@@ -251,3 +253,8 @@ Plan ➜ Session ➜ Set ➜ Exercise ➜ Rep ➜ Movement
     - exercise x.. and so on...
  - back exercises.. and so on..
 
+### Mockups
+
+#### Homepage
+
+![Homepage UI Design](/docs/images/UI%20Design/Kinergize%20-%20UI%20Design%20-%20Homepage.png)
