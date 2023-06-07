@@ -8,7 +8,7 @@ Get a list of all workout plans, for administrators only.
 &nbsp;&nbsp;&nbsp;&nbsp; GET
 
 ### URL
-&nbsp;&nbsp;&nbsp;&nbsp; api/users
+&nbsp;&nbsp;&nbsp;&nbsp; api/plans
 
 ### Minimum Role Required
 Admin
