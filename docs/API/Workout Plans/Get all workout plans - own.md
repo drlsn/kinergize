@@ -18,18 +18,21 @@ User
 &nbsp;&nbsp;&nbsp;&nbsp; [*More Info*](../Kinergize%20-%20API%20General%20Info.md)
 
 #### 200
-&nbsp;&nbsp;&nbsp;&nbsp; Array with list of own workout plan ids
+&nbsp;&nbsp;&nbsp;&nbsp; Object containing an array with list of own workout plan ids
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
-- array of strings
+- object
+  - array of strings
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
-[
-  "plan-sdfbse",
-  "plan-jnnfgj",  
-  "plan-asdfaw",  
-  "plan-ewseft",  
-  "plan-asdvew"  
-]
+{
+  [
+    "plan-sdfbse",
+    "plan-jnnfgj",  
+    "plan-asdfaw",  
+    "plan-ewseft",  
+    "plan-asdvew"  
+  ]
+}
 ```
