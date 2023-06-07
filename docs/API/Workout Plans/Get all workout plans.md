@@ -18,18 +18,20 @@ Admin
 &nbsp;&nbsp;&nbsp;&nbsp; [*More Info*](../Kinergize%20-%20API%20General%20Info.md)
 
 #### 200
-&nbsp;&nbsp;&nbsp;&nbsp; Array of workout plan ids
+&nbsp;&nbsp;&nbsp;&nbsp; Object containing an array of workout plan ids
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
 - array of strings
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
-[
-  "plan-sdfbse",
-  "plan-jnnfgj",  
-  "plan-asdfaw",  
-  "plan-ewseft",  
-  "plan-asdvew"  
-]
+{
+  [
+    "plan-sdfbse",
+    "plan-jnnfgj",  
+    "plan-asdfaw",  
+    "plan-ewseft",  
+    "plan-asdvew"  
+  ]
+}
 ```
