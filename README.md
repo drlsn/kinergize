@@ -25,7 +25,7 @@
 
 The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documentation/web-api). 
 
-Every endpoint requires at least a certain role to be able to execute it successfully. Depending on a role the same endpoint my return different amounts of data. The roles, from the most to the least privileged, are:
+Every endpoint requires at least a certain role to be able to execute it successfully. Depending on a role the same endpoint might return different amounts of data. The roles, from the most to the least privileged, are:
 - Admin - requires an authorization token with the role assigned
 - User - requires an authorization token
 - Guest - does not require an authorization token
