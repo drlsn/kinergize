@@ -21,7 +21,8 @@ Admin
 &nbsp;&nbsp;&nbsp;&nbsp; Object containing an array of workout plan ids
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Fields*
-- array of strings
+- object
+  - array of strings
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Example*
 ```
