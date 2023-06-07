@@ -3,9 +3,9 @@
 [1. General](#general)  
 [2. API](#api)  
 [3. Architecture](#architecture)  
-[4. UI Design](#ui-design)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Mockups](#mockups)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.2 View Descriptions](#view-descriptions)  
+[4. UI Design](#ui-design)
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 View Descriptions](#view-descriptions)
+&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Mockups](#mockups)  
 
 ## General
 
