@@ -19,6 +19,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp; https://kinergize.com  
 &nbsp;&nbsp;&nbsp;&nbsp; https://kinergize.pl  
 
+#### Implementation
+&nbsp;&nbsp;&nbsp;&nbsp; Since the implementation will serve as fundament for future projects, for now it is located at:
+- https://github.com/drlsn/Corelibs.Blazor.UIComponents
+- https://github.com/drlsn/blazor-app-template
+
+&nbsp;&nbsp;&nbsp;&nbsp; It will be copied here at some point.
+
 ## API
 
 The API is inspired mainly by [SpotifyAPI](https://developer.spotify.com/documentation/web-api). 
