@@ -27,7 +27,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; It will be copied here at some point.
 
 #### Production Environment Setup
-- Create AWS E2C instance, install Docker, add elastic IP, add certificate
+- Create AWS E2C instance, install Docker, add elastic IP, point domains to ip, add ssl certificate
 - Create Azure B2C tenant and app registration(s) for authentication
 
 ## API
