@@ -12,14 +12,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp; App for adding and tracking progress of your workouts, so to make potential improvements in the future.
 
 #### Tech
-&nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, JavaScript, React.js, C#/.NET, AWS, Docker, WebApi
+&nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, C#, Blazor Server, .NET, AWS, Docker
 
-#### Team
-| Name | Roles | Github | Discord | 
-| --- | --- | --- |  --- |
-| mrfox | Frontend | https://github.com/mr-fox93 |  mrfox#0699 |
-| kamil__mlu | UI Design | https://github.com/kamilMalinowski | kamil__mlu#4278 |
-| daretski | Backend / Management | https://github.com/drlsn | daretsuki#4793   | 
+#### Demo Urls
+https://kinergize.me
+https://kinergize.com
+https://kinergize.pl
 
 ## API
 
