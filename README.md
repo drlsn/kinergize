@@ -15,9 +15,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, C#, Blazor Server, .NET, AWS, Docker
 
 #### Demo Urls
-&nbsp;&nbsp;&nbsp;&nbsp; https://kinergize.me  
-&nbsp;&nbsp;&nbsp;&nbsp; https://kinergize.com  
-&nbsp;&nbsp;&nbsp;&nbsp; https://kinergize.pl  
+&nbsp;&nbsp;&nbsp;&nbsp; http://kinergize.me  
+&nbsp;&nbsp;&nbsp;&nbsp; http://kinergize.com  
+&nbsp;&nbsp;&nbsp;&nbsp; http://kinergize.pl  
 
 #### Implementation
 &nbsp;&nbsp;&nbsp;&nbsp; Since the implementation will serve as fundament for future projects, for now it is located at:
