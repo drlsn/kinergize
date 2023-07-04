@@ -39,6 +39,8 @@ api/plans/{planId}
 {
   "id": "plan-jnnfgj",
   "name": "Push - Pull",
+  "authorId": "user-njfdnj",
+  "authorName": "John Smith",
   "sessions": [
     {
       "id": "session-jfdimn",
