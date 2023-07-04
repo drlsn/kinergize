@@ -27,7 +27,6 @@ User
 - object
   - id - string
   - name - string
-  - sessionsPerDay - int - count of preferred sessions to be performed per day
   - sessions - array of objects
     - object
       - id - id of a session
@@ -40,7 +39,6 @@ api/plans/{planId}
 {
   "id": "plan-jnnfgj",
   "name": "Push - Pull",
-  "sessionsPerDay": 1,
   "sessions": [
     {
       "id": "session-jfdimn",
