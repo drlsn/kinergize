@@ -25,8 +25,12 @@ User
 
 #### *Fields*
 - object
-  - id - string
-  - name - string
+  - identity - object
+    - id - string
+    - name - string
+  - author - object
+    - id - string
+    - name - string
   - sessions - array of objects
     - object
       - id - id of a session
@@ -37,10 +41,14 @@ User
 ```
 api/plans/{planId}
 {
-  "id": "plan-jnnfgj",
-  "name": "Push - Pull",
-  "authorId": "user-njfdnj",
-  "authorName": "John Smith",
+  "identity": {
+    "id": "plan-jnnfgj",
+    "name": "Push - Pull",
+  },
+  "author": {
+    "id": "user-jnnfgj",
+    "name": "John Smith",
+  },
   "sessions": [
     {
       "id": "session-jfdimn",
